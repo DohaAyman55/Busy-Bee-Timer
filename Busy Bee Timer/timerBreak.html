@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Busy Bee Timer</title>
+        <link href="CSS/timerBreak.css" rel="stylesheet"/>
+        <script src="JS/timerBreak.js" defer></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h2>Take A Break</h2>
+            </div>
+
+            <div id="gif">
+                <img id='gif' src="image/coffee-edit.gif" alt="bee"/>
+            </div>
+            
+            <div id="audioPicker">
+                <select id="audioList">
+                    <option class="choice" vlaue="audio/lofi-alarm-clock.mp3">Lofi Music</option>
+                    <option class="choice" value="audio/fnaf-music-box.mp3">FNAF Music Box</option>
+                    <option class="choice" value="audio/MAGHRAB_33.mp3">MAGHRAB_33</option>
+                    <option class="choice" value="audio/rainy-birds-chirping.mp3">Rainy Chirping Birds</option>
+                    <option class="choice" value="audio/trap-drums.mp3">Trap Drums</option>
+                    <option class="choice" value="audio/wall-clock-ticking.mp3">Wall Clock Ticking</option>
+                </select>
+            </div>
+
+            <div id="display">
+                    <!--take input to set time-->
+                    <button id="decrease">−</button>
+                    <div id="clock"><h1 id="time">05:00</h1></div>
+                    <button id="increase">+</button>
+            </div>
+
+                        
+            <div id="controls">
+                <button id="start">Start</button>
+                <button id="pause">Pause</button>
+                <button id="reset">Reset</button>
+                <label id="mute">Mute</label>
+                <div id="toggleMusic">
+                    <label id="switch">
+                        <input id="muteCheck" type="checkbox"/>
+                        <span id="slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div id="audio">
+                <audio id="bgm" src="audio/lofi-alarm-clock.mp3" controls loop></audio>
+                <audio id="alarm" src="audio/electronic-doorbell.mp3" controls loop></audio>
+            </div>
+        </div>
+    </body>
+</html>

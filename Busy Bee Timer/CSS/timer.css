@@ -1,0 +1,227 @@
+*{
+}
+
+html{
+    width:100%;
+}
+
+body{
+    background-color: #fcec04; /*#10383A*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    user-select: none;
+    height: 100vh;
+    width: 100%;
+
+    margin:0;
+    padding: 0;;
+} 
+
+#container{
+    background-color: #fcec04;
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+#header{
+    text-align: center;
+    width: 100%;
+}
+
+#gif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+#display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 160px;
+    background-color: #000000;
+    margin-bottom: 40px;
+}
+
+#controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    margin-bottom: 5%;
+    margin-left: 130px;
+}
+
+#audio{
+    display: none;
+}
+
+h2{
+    color: #000000;
+    font-size: 28pt;
+    text-align: center;
+    font-family: 'Courier New';
+    font-weight: bolder;
+    letter-spacing: 0.7em;
+}
+
+img{
+    object-fit: cover;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+    width: 27%;
+}
+
+h1{
+    color: #fff243;
+    font-size: 90pt;
+    font-family: 'digital-clock';
+    text-align: center;
+    font-weight: lighter;
+    padding-left: 20px;
+    letter-spacing: 0.2em;
+}
+
+ #increase, #decrease{
+    background-color: #fff243;
+    color:#000000;
+}
+
+#increase:hover, #decrease:hover{
+    background-color: #65ffff;
+}
+
+button{
+    min-height:35px; 
+    min-width: 80px;
+
+    border-radius: 13px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-block: 7px;
+
+    background-color: #000000;
+    color: aliceblue;
+    font-family: 'Courier New';
+    font-weight: 700;
+    font-size: 12pt;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #65ffff;
+    border-color: black;
+
+    color: black;
+    font-family: 'Courier New';
+    font-weight: 700;
+    transition: 0.7s;
+}
+
+#toggleMusic{
+    position: relative;
+    margin-left: -50px;
+}
+
+#switch{
+    display: flex;
+    justify-content: center;
+
+    width: 40px;
+    height: 20px;
+    border-radius: 13px;
+    background-color: #000000;
+}
+
+input{
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+#slider{ 
+    width: 14px;
+    height: 14px;
+    inset: 0;
+    border-radius: 50%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#slider::before{
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #ccc;
+    top: 50%;
+    left: 2px;
+
+    transform: translateY(-50%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#switch input:checked + #slider::before {
+    background-color: #65ffff;
+    left: 20px;
+}
+
+@font-face{
+    font-family:'digital-clock';
+    src: url('Technology.ttf');
+}
+
+#audioPicker{
+    width:100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#audioList {
+    position: relative;
+    width: 220px;
+    
+    color: white;
+    border-color: #000000;
+    border-radius: 13px;
+    padding: 10px;  
+
+    background-color: #000000;
+    font-family: 'Courier New';
+    font-weight: 700;
+    font-size: 12pt;
+    text-align: center; 
+
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;
+}
+
+#audioList:hover {
+    background-color: #65ffff;
+    color: black;
+    border-color: #000000;
+}
+
+.choice{
+    background-color: #fff243;
+    color: black;
+    font-weight: bold;
+}
