@@ -47,6 +47,6 @@
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/yourusername/busy-bee-timer.git
+git clone https://github.com/DohaAyman55/busy-bee-timer.git
 cd busy-bee-timer
 ```
